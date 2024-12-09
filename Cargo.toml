@@ -1,13 +1,14 @@
 [package]
-name = "sevenzip-sys"
+name = "lzma-sdk-sys"
 version = "0.1.1"
 edition = "2021"
 authors = [
-    "Julia DeMille <me@jdemille.com>"
+    "Sewer56 <admin@sewer56.dev>",
+    # Inspired by, Julia DeMille <me@jdemille.com> , but rewritten since
 ]
 license = "MIT"
-description = "FFI bindings to 7-zip"
-repository = "https://github.com/judemille/sevenzip-sys"
+description = "Raw FFI bindings for LZMA-SDK (7zip)"
+repository = "https://github.com/Sewer56/lzma-sdk-sys.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,6 +16,6 @@ repository = "https://github.com/judemille/sevenzip-sys"
 libc = "0.2"
 
 [build-dependencies]
-bindgen = "~0.69"
+bindgen = "0.71.0"
 cc = "1.0"
 glob = "0.3"
